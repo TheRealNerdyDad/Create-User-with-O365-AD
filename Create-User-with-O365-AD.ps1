@@ -111,11 +111,6 @@ Elseif ($dep -eq "Production") { #(Module 1.30)
     Add-ADGroupMember -Identity 'Production' -Members $un #(Module 1.31)
 } #Adds the user to the Production GroupHR
 Elseif ($dep -eq "QA") {  #(Module 1.32)
-    Add-ADGroupMember -Identity 'QA Group' -Members $un #(Module 1.33)
-} #Adds the user to the QA Group
-Elseif ($dep -eq "Quality Assurance") {  #(Module 1.34)
-    Add-ADGroupMember -Identity 'QA Group' -Members $un #(Module 1.35)
-} #Adds the user to the QA Group
 Elseif ($dep -eq "Shipping") {  #(Module 1.36)
     Add-ADGroupMember -Identity 'SHIP' -Members $un #(Module 1.37)
 } #Adds the user to the Shipping Group
@@ -142,13 +137,6 @@ Your phone number is $officePhone Ext.
 It is suggested that you change your password to something that you can remember but difficult enough that somebody else cannot
 figure out.   The requirement is only 6 characters, but we do advise on making it longer, throw some numbers and special
 characters in there as well to make it stronger.   Best advice would be to use a pass-PHRASE instead of a pass-WORD.
-
-Your computer should already be setup with your email loaded and your network drives.   At <MyCompany>, we use Microsoft
-Outlook as the email client.   Depending on what department you are in will depend on what drives you have available.  
-Generally, everybody will have an F: drive and a G: drive.   The F: drive is your network folder.   Place in there the documents
-that you feel you cannot do your job without.   In the F: drive will be a scan folder.   When you go to the Xerox to scan in
-documents, then you will find them in your scan folder.   The G: drive is a company-wide shared folder.  As for your department
-drives, it would be best to talk with $($manfn.name), your supervisor/manager, about the nature and uses of these drives.
 
 The use of the equipment and resources provided are a privilege to you for use and should not be taken advantage of.   There are
 measures set in place that allows us to manage the network.   Do not assume that there is any personal privacy on this network.  
